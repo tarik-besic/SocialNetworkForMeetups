@@ -1,6 +1,3 @@
 # SocialNetworkForMeetups
 
-Working on this project:
-Tarik Besic
-Amar Abaz
-Anes Sehic
+This is a readme file, I hope I cloned the right thing... good night :)

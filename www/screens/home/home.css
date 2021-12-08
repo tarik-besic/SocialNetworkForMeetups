@@ -1,52 +1,44 @@
-#home-screen {
-    background: var(--color-black);   
+.background-image-div{
+    background-color: black;
+    position:absolute;
+    z-index: -1;
+}
+img#\#backgroundIMG{
+    z-index: 100;
+    opacity: 0.6;
+    width: var(--dimension-width);
+    height: var(--dimension-height);
 }
 
-#home-screen #subscreen-new-task .wrapper {
-    margin: 20px;
+.btnContainer{
     display: flex;
-    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-#home-screen #subscreen-new-task .wrapper .input-label {
-    margin: 10px 0;
+.myBtn{
+    background-color: var(--color-red);
+    width: 300px;
+    height: 60px;
+    color: var(--color-white);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 25px;
 }
-
-#home-screen #subscreen-new-task .wrapper .input-label .label {
-    text-align: right;
-    color: var(--color-black);
-    font-size: 20px;
-    font-weight: 600;
+.myBtnWhite{
+    background-color: #EEEDED;
+    width: 300px;
+    height: 60px;
+    color: var(--color-background-black);
+    border-radius: 20px;
+    font-size: 25px;
 }
-
-#home-screen #subscreen-new-task .wrapper .input-label input {
+.title{
     width: 100%;
-    height: 48px;
-    text-align: center;
-    font-size: 18px;
-
-    border: solid 1px grey;
-    border-radius: 8px;
-}
-
-
-#home-screen #subscreen-new-task .wrapper .input-label input[type="date"] {}
-#home-screen #subscreen-new-task .wrapper .input-label input[type="time"] {}
-
-
-#home-screen #subscreen-new-task .wrapper .input-label textarea {
-    width: 100%;
-    height: 280px;
-    font-size: 18px;
-    border-radius: 8px;
-}
-
-#home-screen #subscreen-new-task .wrapper button {
-    padding: 8px;
-    min-width: 128px;
-    background: var(--color-black);
-    border: none;
-    color: white;
-    font-size: 18px;
-    margin-left: auto;
+    text-align:center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+    margin-bottom: 360px;
+    margin-top: 60px;
+    color: var(--color-red,red);
 }

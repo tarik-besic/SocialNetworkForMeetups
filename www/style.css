@@ -17,12 +17,14 @@ body {
 
 .screen {
     width: var(--dimension-width);
-    height: calc(var(--dimension-height) - 64px);
-    background: var(--color-black);
+    height: calc(var(--dimension-height));
     overflow-y: auto;
-    padding-top: 64px;
 }
 
 .screen::-webkit-scrollbar {
     display: none;
 }
+
+button{
+    border: none;
+    }

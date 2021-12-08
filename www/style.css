@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.app {
+    overflow: hidden;
+    position: relative;
+}
+
+.screen {
+    width: var(--dimension-width);
+    height: calc(var(--dimension-height) - 64px);
+    background: var(--color-black);
+    overflow-y: auto;
+    padding-top: 64px;
+}
+
+.screen::-webkit-scrollbar {
+    display: none;
+}

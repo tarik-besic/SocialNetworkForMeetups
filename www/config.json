@@ -1,0 +1,21 @@
+{
+    "dependencies": [
+        "./utils/StyleLoader.js",
+        "./utils/Navigator.js"
+    ],
+    "styles":[
+        "./assets/styles/colors.css",
+        "./assets/styles/dimensions.css"
+    ],
+    "components": [
+        "./screens/screen",
+        "./components/base",
+        "./components/header",
+        "./components/day-segment",
+        "./components/subscreen"
+    ],
+    "start_screen": "home",
+    "screens": {
+        "home": true
+    }
+}

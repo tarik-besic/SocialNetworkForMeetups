@@ -14,8 +14,9 @@
         "./components/day-segment",
         "./components/subscreen"
     ],
-    "start_screen": "home",
+    "start_screen": "signup",
     "screens": {
-        "home": true
+        "home": true,
+        "signup": true
     }
 }

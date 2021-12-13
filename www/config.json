@@ -12,9 +12,10 @@
         "./components/base",
         "./components/header",
         "./components/day-segment",
-        "./components/subscreen"
+        "./components/subscreen",
+        "./components/inputUsername"
     ],
-    "start_screen": "signup",
+    "start_screen": "home",
     "screens": {
         "home": true,
         "signup": true

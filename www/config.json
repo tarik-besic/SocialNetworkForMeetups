@@ -13,9 +13,10 @@
         "./components/header",
         "./components/day-segment",
         "./components/subscreen",
-        "./components/inputUsername"
+        "./components/inputUsername",
+        "./components/navbar"
     ],
-    "start_screen": "home",
+    "start_screen": "signup",
     "screens": {
         "home": true,
         "signup": true

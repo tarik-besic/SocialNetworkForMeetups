@@ -7,3 +7,6 @@
     margin-top: 60px;
     color: var(--color-red,red);
 }
+#signup-screen{
+    background-color: var(--color-background-black);
+}

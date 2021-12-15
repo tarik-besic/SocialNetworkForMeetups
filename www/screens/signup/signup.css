@@ -10,3 +10,9 @@
 #signup-screen{
     background-color: var(--color-background-black);
 }
+
+.signUpText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

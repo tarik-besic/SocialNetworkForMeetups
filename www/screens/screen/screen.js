@@ -30,7 +30,7 @@ class Screen {
         screen.dom = elem;
         return screen;
     }
-
+    // unload(){ this.dom.remove();}
     screen_events(){}
     before_render(){}
 }

@@ -14,7 +14,10 @@
         "./components/day-segment",
         "./components/subscreen",
         "./components/inputUsername",
-        "./components/navbar"
+        "./components/navbar",
+        "./components/inputEmail",
+        "./components/inputPassword",
+        "./components/inputButtonSubmit"
     ],
     "start_screen": "signup",
     "screens": {

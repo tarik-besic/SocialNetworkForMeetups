@@ -20,9 +20,10 @@
         "./components/inputButtonSubmit",
         "./components/checkBoxTerms"
     ],
-    "start_screen": "signup",
+    "start_screen": "login",
     "screens": {
         "home": true,
-        "signup": true
+        "signup": true,
+        "login": true
     }
 }

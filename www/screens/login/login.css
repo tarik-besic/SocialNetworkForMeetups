@@ -1,0 +1,18 @@
+.title{
+    width: 100%;
+    text-align:center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+    margin-bottom: 360px;
+    margin-top: 60px;
+    color: var(--color-red,red);
+}
+#login-screen{
+    background-color: var(--color-background-black);
+}
+
+.loginText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

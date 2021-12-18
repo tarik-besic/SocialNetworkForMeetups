@@ -1,0 +1,44 @@
+.eventContainer{
+    width: 340px;
+    height: 125px;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    user-select: none;
+}
+#eventImg{
+    width: 150px;
+    height: 85px;
+    border-radius:10px;
+}
+.eventInfoHalf1{
+    padding: 10px;
+    padding-right:0px;
+}
+.eventInfoHalf2{
+    padding: 10px;
+}
+.eventDate{
+    margin-bottom: 6px;
+    color: var(--color-red);
+    font-weight: bold;
+}
+.eventName{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.component.component-event{
+    display: flex;
+    justify-content: center;
+}
+.number-of-attendees{
+    margin-top: 4px;
+    color: var(--color-green);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.number-of-attendees .checkBoxic{
+    margin-right: 10px;
+}

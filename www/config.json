@@ -17,7 +17,8 @@
         "./components/navbar",
         "./components/inputEmail",
         "./components/inputPassword",
-        "./components/inputButtonSubmit"
+        "./components/inputButtonSubmit",
+        "./components/checkBoxTerms"
     ],
     "start_screen": "signup",
     "screens": {

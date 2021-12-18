@@ -1,0 +1,15 @@
+.groupImg{
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+}
+.groupName{
+    min-width: 80px;
+    max-width: 80px;
+
+    max-height: 35px;
+    min-height: 17.5px;
+}
+.group{
+    user-select: none;
+}

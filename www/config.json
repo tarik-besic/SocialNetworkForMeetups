@@ -19,7 +19,8 @@
         "./components/inputPassword",
         "./components/inputButtonSubmit",
         "./components/checkBoxTerms",
-        "./components/group"
+        "./components/group",
+        "./components/event"
     ],
     "start_screen": "start",
     "screens": {

@@ -1,28 +1,21 @@
 class groupComponent extends BaseComponent{
     static Name = 'group'
     static ClassName = 'component-group';
-    static path="./assets/images/icons"
     static loaded=false;
     static id=0;
     static init_events(root_dom){
         
         let name=root_dom.dataset.name; //getting name
-        let imgUrl=this.path + root_dom.dataset.imgurl; //getting url
+        let imgUrl=this.imgPath + root_dom.dataset.imgurl; //getting url
 
-        root_dom.childNodes[0].childNodes[4].textContent=name; //setting group name
-        root_dom.firstChild.childNodes[1].firstChild.src=imgUrl; //setting img url
-        root_dom.firstChild.childNodes[1].firstChild.onclick=function(){
-            console.log("nesto")
-        };
-
-        root_dom.querySelector(".name")
-
+        root_dom.querySelector(".groupName").textContent=name;
+        root_dom.querySelector(".groupImg").src=imgUrl //setting img url
+       
         if(!this.loaded)
             {
                 this.enable_slider();
                 this.loaded=true;
             }
-
     }
     static enable_slider(){
         const slider = document.querySelector('.group_container');

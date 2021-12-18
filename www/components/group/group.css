@@ -13,3 +13,6 @@
 .group{
     user-select: none;
 }
+.group_container{
+    margin-bottom: 20px;
+}

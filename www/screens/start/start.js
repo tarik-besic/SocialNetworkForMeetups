@@ -6,10 +6,6 @@ class startScreen extends Screen {
     constructor(){
         super();
     }
-    nesto()
-    {
-        console.log("nesto")
-    }
 }
 
 app.screens['start'] = startScreen;

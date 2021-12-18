@@ -11,3 +11,11 @@ margin-top: 20px;
     border-bottom: 1px solid #C4C4C4;
     overflow-x:hidden;
 }
+.noClass{
+    margin-bottom: 15px;
+    padding-left: 13px;
+}
+.component.component-event
+{
+    margin-bottom: 20px;
+}

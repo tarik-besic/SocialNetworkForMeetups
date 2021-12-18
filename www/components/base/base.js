@@ -3,6 +3,8 @@ class BaseComponent {
     static ClassName = 'component-base';
     static Template = '';
     static Events = {}
+    static imgPath="./assets/images/icons"
+
 
     static get Config(){
         return {

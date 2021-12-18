@@ -1,0 +1,13 @@
+#start-screen{
+    background-color: var(--color-background-black);
+}
+.component.component-group{
+margin-left: 20px;
+margin-top: 20px;
+}
+.group_container{
+    display: flex;
+    height: 170px;
+    border-bottom: 1px solid #C4C4C4;
+    overflow-x:hidden;
+}

@@ -18,12 +18,14 @@
         "./components/inputEmail",
         "./components/inputPassword",
         "./components/inputButtonSubmit",
-        "./components/checkBoxTerms"
+        "./components/checkBoxTerms",
+        "./components/group"
     ],
-    "start_screen": "login",
+    "start_screen": "start",
     "screens": {
         "home": true,
         "signup": true,
-        "login": true
+        "login": true,
+        "start": true
     }
 }

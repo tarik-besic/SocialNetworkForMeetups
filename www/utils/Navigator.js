@@ -20,13 +20,11 @@ class Navigator{
 
         Navigator.CURRENT_SCREEN = screen_name;
         Navigator.CURRENT_SCREEN_INSTANCE = app.screens[name].create_dom();
-
         document.querySelector(".app").innerHTML="";
 
-
-        console.log(Navigator.CURRENT_SCREEN_INSTANCE.dom);
         if(this.takeData)
         {
+            //setting all events
             if(data.events.length>0)
                 data.events.forEach(event => {
                     let component=document.createElement("div");
@@ -34,12 +32,25 @@ class Navigator{
                     component.classList.add("component-event");
                     component.dataset.data=JSON.stringify(event);
                     component.setAttribute("selected-screen","groupInfo")
-                    console.log(component)
-                    Navigator.CURRENT_SCREEN_INSTANCE.dom.append(component);
-                    console.log(Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".container"))
-
-                    
+                    Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".events-container").append(component);  //u container appendam sve eventove
                 });
+
+            //making image and setting group image
+            let img=document.createElement("img");
+            img.classList.add("img");
+            img.src=BaseComponent.imgPath+ data.imgUrl;
+            Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".image-container").append(img);
+
+            //setting group-info
+            let div=document.createElement("div");
+            div.classList.add("info");
+            div.innerHTML=data.number_of_members;
+            div.innerHTML+=" Members";
+            Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".info-container").append(div);
+
+            //setting header groupName
+             this.CURRENT_SCREEN_INSTANCE.dom.querySelector(".component-header").dataset.value=data.groupName;
+            // this.CURRENT_SCREEN_INSTANCE.dom
         }
         await document.querySelector('.app').append(Navigator.CURRENT_SCREEN_INSTANCE.dom);
         Navigator.CURRENT_SCREEN_INSTANCE.init();

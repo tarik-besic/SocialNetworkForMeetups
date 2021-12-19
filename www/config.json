@@ -22,7 +22,7 @@
         "./components/group",
         "./components/event"
     ],
-    "start_screen": "start",
+    "start_screen": "home",
     "screens": {
         "home": true,
         "signup": true,

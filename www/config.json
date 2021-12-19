@@ -27,6 +27,7 @@
         "home": true,
         "signup": true,
         "login": true,
-        "start": true
+        "start": true,
+        "groupInfo":true
     }
 }

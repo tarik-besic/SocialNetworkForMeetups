@@ -102,7 +102,7 @@ var app = {
             });
         },
         init_app: function(){
-            Navigator.navigate(app.config.start_screen);
+            Navigator.navigate(app.config.start_screen,"");
         }
     },
 }

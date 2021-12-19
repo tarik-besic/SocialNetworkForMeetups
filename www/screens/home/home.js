@@ -18,12 +18,12 @@ class HomeScreen extends Screen {
     }
 
     screen_events(){
-        function prebaci(){
-            console.log("prebacujem")
-            Navigator.navigate("signup")
-        }
-        let btn=document.getElementById("myBtn");
-        btn.addEventListener("click",prebaci);
+        // function prebaci(){
+        //     console.log("prebacujem")
+        //     Navigator.navigate("signup")
+        // }
+        // let btn=document.getElementById("myBtn");
+        // btn.addEventListener("click",prebaci);
     }
 
 }

@@ -46,11 +46,10 @@ class Navigator{
             div.classList.add("info");
             div.innerHTML=data.number_of_members;
             div.innerHTML+=" Members";
-            Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".info-container").append(div);
+            Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".number-of-members").append(div);
 
             //setting header groupName
              this.CURRENT_SCREEN_INSTANCE.dom.querySelector(".component-header").dataset.value=data.groupName;
-            // this.CURRENT_SCREEN_INSTANCE.dom
         }
         await document.querySelector('.app').append(Navigator.CURRENT_SCREEN_INSTANCE.dom);
         Navigator.CURRENT_SCREEN_INSTANCE.init();

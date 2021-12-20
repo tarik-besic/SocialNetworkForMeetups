@@ -20,14 +20,17 @@
         "./components/inputButtonSubmit",
         "./components/checkBoxTerms",
         "./components/group",
-        "./components/event"
+        "./components/event",
+        "./components/intrests",
+        "./components/inputDescription"
     ],
-    "start_screen": "home",
+    "start_screen": "createGroup",
     "screens": {
         "home": true,
         "signup": true,
         "login": true,
         "start": true,
-        "groupInfo":true
+        "groupInfo":true,
+        "createGroup":true
     }
 }

@@ -1,0 +1,25 @@
+.tareDiv{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+}
+#tareIMG{
+    width: 24px;
+    height: 24px;
+}
+.tareText{
+    color: #c4c4c4;
+    height: fit-content;
+    margin-left: 15px;
+}
+.arrow{
+width: fit-content;
+height: fit-content;
+margin-left: 160px;
+}
+.tareTitle{
+    margin: 12px;
+    color: #c4c4c4;
+}

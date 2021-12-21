@@ -14,18 +14,31 @@ class Navigator{
 
         let name = screen_name.split('/')[screen_name.split('/').length-1];
         StyleLoader.load_style([`./screens/${screen_name}/${name}.css`]);
-
+        
         if(Navigator.CURRENT_SCREEN_INSTANCE != null)
-            Navigator.HISTORY.push(Navigator.CURRENT_SCREEN_INSTANCE);
-
+        Navigator.HISTORY.push(Navigator.CURRENT_SCREEN_INSTANCE);
+        
         Navigator.CURRENT_SCREEN = screen_name;
         Navigator.CURRENT_SCREEN_INSTANCE = app.screens[name].create_dom();
         document.querySelector(".app").innerHTML="";
 
-        if(this.takeData)
+        if(screen_name=="start"&& data!="") //checking if component is sent when comming to start screen
+        {
+            console.log(data);
+            Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".group_container").append(data);
+        }
+
+        if(this.takeData) //if going to groupInfo screen, take data from parameter "data".
         {
             //setting all events
             if(data.events.length>0)
+            {
+                if(Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".staticImages").classList.contains("hide"))
+                    {
+                        Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".staticImages").classList.remove("hide")
+                        Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".info").classList.remove("hide");
+                    }
+                
                 data.events.forEach(event => {
                     let component=document.createElement("div");
                     component.classList.add("component");
@@ -34,6 +47,12 @@ class Navigator{
                     component.setAttribute("selected-screen","groupInfo")
                     Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".events-container").append(component);  //u container appendam sve eventove
                 });
+            }
+            else
+                {
+                    Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".staticImages").classList.add("hide");
+                    Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".info").classList.add("hide");
+                }
 
             //making image and setting group image
             let img=document.createElement("img");
@@ -46,6 +65,7 @@ class Navigator{
             div.classList.add("info");
             div.innerHTML=data.number_of_members;
             div.innerHTML+=" Members";
+            console.log(div);
             Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".number-of-members").append(div);
 
             //setting header groupName

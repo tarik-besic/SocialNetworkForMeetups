@@ -21,7 +21,7 @@ class Navigator{
         Navigator.CURRENT_SCREEN = screen_name;
         Navigator.CURRENT_SCREEN_INSTANCE = app.screens[name].create_dom();
         document.querySelector(".app").innerHTML="";
-
+        
         if(screen_name=="start"&& data!="") //checking if component is sent when comming to start screen
         {
             console.log(data);
@@ -33,7 +33,8 @@ class Navigator{
             //setting all events
             if(data.events.length>0)
             {
-                if(Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".staticImages").classList.contains("hide"))
+                // console.log(Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelectorAll(".number-of-members .info").innerHTML.split(" ")) 
+                if(Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".staticImages").classList.contains("hide")) 
                     {
                         Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".staticImages").classList.remove("hide")
                         Navigator.CURRENT_SCREEN_INSTANCE.dom.querySelector(".info").classList.remove("hide");

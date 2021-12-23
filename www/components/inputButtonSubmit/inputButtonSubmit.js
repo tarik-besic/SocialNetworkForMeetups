@@ -8,10 +8,15 @@ class inputButtonSubmitComponent extends BaseComponent{
             switch(root_dom.dataset.navigate)
             {
                 case "SIGN UP": Navigator.navigate("signup"); break;
-                case "LOG IN": Navigator.navigate("start"); break;
+                case "LOG IN": Navigator.navigate("login"); break;
                 case "START": {
-                    let component=inputButtonSubmitComponent.create_groupComponent();
-                    Navigator.navigate("start",component);
+                    if(Navigator.CURRENT_SCREEN!="login") //ako navigiram sa screena, ne zelim da mi pravi komponentu
+                    {
+                        let component=inputButtonSubmitComponent.create_groupComponent();
+                        Navigator.navigate("start",component);
+                    }
+                    else
+                        Navigator.navigate("start");
                 }
             }
         };

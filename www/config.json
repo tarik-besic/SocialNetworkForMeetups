@@ -22,15 +22,18 @@
         "./components/group",
         "./components/event",
         "./components/intrests",
-        "./components/inputDescription"
+        "./components/inputDescription",
+        "./components/groupDisplay",
+        "./components/displayIntrests"
     ],
-    "start_screen": "createGroup",
+    "start_screen": "signup",
     "screens": {
         "home": true,
         "signup": true,
         "login": true,
         "start": true,
         "groupInfo":true,
-        "createGroup":true
+        "createGroup":true,
+        "userProfile":true
     }
 }

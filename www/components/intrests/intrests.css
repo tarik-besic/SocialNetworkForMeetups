@@ -13,6 +13,7 @@
     color: #c4c4c4;
     height: fit-content;
     margin-left: 15px;
+    user-select: none;
 }
 .arrow{
 width: fit-content;
@@ -22,4 +23,5 @@ margin-left: 160px;
 .tareTitle{
     margin: 12px;
     color: #c4c4c4;
+    user-select: none;
 }

@@ -1,0 +1,29 @@
+.groupDisplay{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c4c4c4;
+    background-color: #B3B2B2;
+    width: 340px;
+    border-radius: 30px;
+}
+
+.groupDisplayImgDiv{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+.groupDisplayImg{
+    width: 50px;
+    height: 42px;
+}
+
+.groupDisplaySecondHalf{
+padding: 5px;
+}
+.groupDisplayHeader{
+    color: black;
+}
+.groupDisplayMembers{
+    color: #fff
+}

@@ -1,0 +1,11 @@
+.nekiContainer{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    border-radius: 40px;
+}
